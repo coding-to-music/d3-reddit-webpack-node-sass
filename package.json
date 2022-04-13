@@ -15,6 +15,7 @@
     "d3": "^5.16.0"
   },
   "scripts": {
-    "start": "npx webpack --watch --mode=development"
+    "start": "npx webpack --watch --mode=development",
+    "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku"
   }
 }
